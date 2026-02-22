@@ -1,0 +1,281 @@
+/* ====== Estilos generales ====== */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* ====== Encabezado y navegación ====== */
+header {
+    background-color: #00800b96;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: color 0.3s, background-color 0.3s, font-size 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00800b96;
+    background-color: #ffd700;
+    font-size: 19px;
+}
+
+nav ul li a:active {
+    color: white;
+    background-color: #002050;
+    font-size: 14px;
+}
+
+/* ====== Secciones ====== */
+section {
+    margin: 30px auto;
+    width: 80%;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* ====== Tablas ====== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid #00800b96;
+}
+
+th {
+    background-color: #00800b96;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 8px;
+}
+
+/* ====== Formularios ====== */
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #00800b96;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #003060;
+}
+
+/* ====== Cifras grid ====== */
+.cifras-grid {
+    display: flex;
+    gap: 0;
+    flex-wrap: wrap;
+}
+
+.cifra-card {
+    flex: 1;
+    min-width: 140px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.cifra-numero {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #004080;
+}
+
+.cifra-label {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* ====== Padding (req. 7) ====== */
+.padding-box {
+    border: 2px solid #004080;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+/* ====== Margin (req. 8) ====== */
+.margin-box {
+    border: 2px solid #0066cc;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+/* ====== Color (req. 9) ====== */
+.color-text {
+    color: #004080;
+    font-size: 1rem;
+    margin-top: 8px;
+}
+
+/* ====== Background-color (req. 10) ====== */
+.bg-text {
+    background-color: #e8f0fe;
+    color: #003060;
+    padding: 14px 18px;
+    border-radius: 6px;
+    border-left: 4px solid #004080;
+    font-weight: 500;
+}
+
+/* ====== Text-align (req. 11) ====== */
+.text-align-box {
+    border: 2px solid #004080;
+    text-align: center;
+    padding: 24px 20px;
+    border-radius: 8px;
+    background-color: #f0f5ff;
+}
+
+/* ====== Font-size (req. 12) ====== */
+.font-size-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #004080;
+    margin: 0 0 10px 0;
+}
+
+/* ====== Hover (req. 13) ====== */
+.hover-box {
+    border: 2px solid #0066cc;
+    padding: 14px 18px;
+    margin: 8px 0;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #0066cc;
+    transition: color 0.3s, background-color 0.3s, font-size 0.3s;
+}
+
+.hover-box:hover {
+    color: white;
+    background-color: #00800b96;
+    font-size: 18px;
+}
+
+/* ====== Click / active (req. 14) ====== */
+.click-box {
+    border: 2px solid #0066cc;
+    padding: 14px 18px;
+    margin: 8px 0;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #0066cc;
+    user-select: none;
+    transition: color 0.1s, background-color 0.1s, font-size 0.1s;
+}
+
+.click-box:active {
+    color: white;
+    background-color: #00800b96;
+    font-size: 18px;
+}
+
+/* ====== Fixed position (req. 15) ====== */
+.fixed-box {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border: 2px solid #00800b96;
+    background-color: white;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+/* ====== Imágenes historia.html ====== */
+.hero-img {
+    width: 100%;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: block;
+    border: 3px solid #00800b96;
+}
+
+.img-float {
+    float: right;
+    width: 260px;
+    margin: 0 0 15px 20px;
+    border-radius: 8px;
+    border: 3px solid #00800b96;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.galeria img {
+    width: calc(33% - 8px);
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #00800b96;
+    transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+/* ====== Footer ====== */
+footer {
+    background-color: #00800b96;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
