@@ -2,52 +2,269 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Universidad Nacional Pedro Henríquez Ureña - Institución académica de excelencia en la República Dominicana.">
+    <meta name="keywords" content="UNPHU, universidad, educación superior, República Dominicana, carreras universitarias">
+    <meta name="author" content="UNPHU">
+    <meta name="robots" content="index, follow">
     <title>UNPHU - Contacto</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
 </head>
 <body>
-    <header>
-        <h1>Contacto UNPHU</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="historia.html">Historia</a></li>
-                <li><a href="carreras.html">Carreras</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+
+<nav class="navbar navbar-expand-lg navbar-unphu sticky-top">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+            <img src="img/logonav.png" alt="UNPHU" height="40" style="filter: brightness(0) invert(1);">
+            <span class="navbar-brand-text d-none d-md-block">UNPHU</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMain">
+            <ul class="navbar-nav ms-auto gap-1">
+                <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-fill me-1"></i>Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="historia.html"><i class="bi bi-book-fill me-1"></i>Historia</a></li>
+                <li class="nav-item"><a class="nav-link" href="carreras.html"><i class="bi bi-mortarboard-fill me-1"></i>Carreras</a></li>
+                <li class="nav-item"><a class="nav-link active" href="contacto.html"><i class="bi bi-envelope-fill me-1"></i>Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="noticias.html"><i class="bi bi-newspaper me-1"></i>Noticias</a></li>
+                <li class="nav-item ms-2">
+  <button id="darkModeToggle">
+    <i class="bi bi-moon-stars-fill me-1"></i> Modo Oscuro
+  </button>
+</li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </div>
+</nav>
 
-    <section>
-        <h2>Información de contacto</h2>
-        <p>Dirección: Av. John F. Kennedy, Santo Domingo, República Dominicana</p>
-        <p>Teléfono: (809) 562-6601</p>
-        <a href="mailto:info@unphu.edu.do"><p>info@unphu.edu.do</p></a>
-    </section>
+<!-- Hero -->
+<div style="background: linear-gradient(135deg, #006400, #004d00); color:white; padding:60px 0;">
+    <div class="container text-center">
+        <h1 style="font-family:'Playfair Display',serif; font-size:3rem; font-weight:900;">Contáctanos</h1>
+        <p class="lead mt-2" style="color:rgba(255,255,255,0.8);">Estamos aquí para responder tus preguntas</p>
+    </div>
+</div>
 
-    <section>
-        <h2>Formulario de contacto</h2>
-        <form>
-            <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="nombre"><br><br>
+<div class="container py-5">
 
-            <label for="email">Correo electrónico:</label><br>
-            <input type="email" id="email" name="email"><br><br>
+    <!-- Alert dismissible -->
+    <div class="alert alert-success alert-dismissible fade show d-none" id="successAlert" role="alert">
+        <i class="bi bi-check-circle-fill me-2"></i>
+        <strong>¡Mensaje enviado!</strong> Nos pondremos en contacto contigo pronto.
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
 
-            <label for="mensaje">Mensaje:</label><br>
-            <textarea id="mensaje" name="mensaje"></textarea><br><br>
+    <!-- Contact Cards HOVER -->
+    <div class="row g-4 mb-5">
+        <div class="col-md-4">
+            <div class="contact-card text-center">
+                <div class="contact-icon mx-auto"><i class="bi bi-geo-alt-fill"></i></div>
+                <h5 class="fw-bold">Dirección</h5>
+                <p class="text-muted">Av. John F. Kennedy, Santo Domingo, República Dominicana</p>
+                <a href="https://maps.google.com" target="_blank" class="btn btn-unphu btn-sm">Ver en mapa</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="contact-card text-center">
+                <div class="contact-icon mx-auto"><i class="bi bi-telephone-fill"></i></div>
+                <h5 class="fw-bold">Teléfono</h5>
+                <p class="text-muted">(809) 562-6601</p>
+                <p class="text-muted small">Lunes a Viernes, 8:00 AM – 5:00 PM</p>
+                <a href="tel:8095626601" class="btn btn-unphu btn-sm">Llamar ahora</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="contact-card text-center">
+                <div class="contact-icon mx-auto"><i class="bi bi-envelope-fill"></i></div>
+                <h5 class="fw-bold">Correo</h5>
+                <p class="text-muted">info@unphu.edu.do</p>
+                <p class="text-muted small">Respuesta en menos de 24 horas</p>
+                <a href="mailto:info@unphu.edu.do" class="btn btn-unphu btn-sm">Enviar correo</a>
+            </div>
+        </div>
+    </div>
 
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+    <!-- Form + Map -->
+    <div class="row g-5">
+        <div class="col-lg-6">
+            <h2 class="section-title">Formulario de Contacto</h2>
+            <div class="bg-white p-4 rounded-4 shadow-sm">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold">Apellido</label>
+                        <input type="text" class="form-control" placeholder="Tu apellido">
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label fw-semibold">Correo electrónico</label>
+                        <input type="email" class="form-control" placeholder="correo@ejemplo.com">
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label fw-semibold">Asunto</label>
+                        <select class="form-select">
+                            <option>Información sobre admisiones</option>
+                            <option>Consulta sobre carreras</option>
+                            <option>Becas y financiamiento</option>
+                            <option>Servicios universitarios</option>
+                            <option>Otro</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label fw-semibold">Mensaje</label>
+                        <textarea class="form-control" rows="4" placeholder="¿En qué podemos ayudarte?"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <div class="d-flex gap-3 flex-wrap">
+                            <button class="btn btn-unphu" onclick="document.getElementById('successAlert').classList.remove('d-none'); window.scrollTo(0,0);">
+                                <i class="bi bi-send-fill me-2"></i>Enviar Mensaje
+                            </button>
+                            <button class="btn btn-outline-secondary">Limpiar</button>
+                            <button class="btn btn-outline-success"
+                                data-bs-toggle="popover"
+                                data-bs-title="💡 Consejo"
+                                data-bs-content="Para una respuesta más rápida, puedes llamarnos directamente al (809) 562-6601 durante horario laboral."
+                                data-bs-trigger="click">
+                                <i class="bi bi-lightbulb-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <h2 class="section-title">Mapa de Ubicación</h2>
+            <div class="iframe-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.9488221029264!2d-69.95109997394218!3d18.485977232600938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89f362e578d3%3A0x19d59fe09af95898!2sUniversidad%20Nacional%20Pedro%20Henr%C3%ADquez%20Ure%C3%B1a%20(UNPHU)!5e0!3m2!1ses!2sdo!4v1771796451944!5m2!1ses!2sdo" 
+                    width="100%" height="400" 
+                    style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+            <div class="mt-3 p-3 rounded-3" style="background:#f0f7f0; border-left:4px solid #006400;">
+                <small class="text-success"><i class="bi bi-info-circle-fill me-1"></i> A 5 minutos de la Autopista Duarte y 10 minutos del Centro de los Héroes.</small>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <section>
-        <h2>Mapa de ubicación</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.9488221029264!2d-69.95109997394218!3d18.485977232600938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89f362e578d3%3A0x19d59fe09af95898!2sUniversidad%20Nacional%20Pedro%20Henr%C3%ADquez%20Ure%C3%B1a%20(UNPHU)!5e0!3m2!1ses!2sdo!4v1771796451944!5m2!1ses!2sdo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
+<footer>
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4">
+    <h5><i class="bi bi-mortarboard-fill me-2"></i>UNPHU</h5>
+    <p class="small mt-2" style="color: rgba(255,255,255,0.6);">Universidad Nacional Pedro Henríquez Ureña. Formando líderes desde 1966 para transformar la República Dominicana.</p>
+    <!-- redes sociales -->
+    <div class="d-flex gap-3 mt-3">
+        <a href="https://www.facebook.com/unphu" target="_blank" title="Facebook">
+            <i class="bi bi-facebook" style="font-size:1.5rem; color:rgba(255,255,255,0.7);"></i>
+        </a>
+        <a href="https://www.instagram.com/unphu" target="_blank" title="Instagram">
+            <i class="bi bi-instagram" style="font-size:1.5rem; color:rgba(255,255,255,0.7);"></i>
+        </a>
+        <a href="https://www.twitter.com/unphu" target="_blank" title="Twitter/X">
+            <i class="bi bi-twitter-x" style="font-size:1.5rem; color:rgba(255,255,255,0.7);"></i>
+        </a>
+        <a href="https://www.youtube.com/@unphu" target="_blank" title="YouTube">
+            <i class="bi bi-youtube" style="font-size:1.5rem; color:rgba(255,255,255,0.7);"></i>
+        </a>
+    </div>
+</div>
+            <div class="col-md-4">
+                <h5>Navegación</h5>
+                <ul class="list-unstyled mt-2" style="color: rgba(255,255,255,0.7);">
+                    <li><a href="index.html"><i class="bi bi-chevron-right me-1"></i>Inicio</a></li>
+                    <li><a href="historia.html"><i class="bi bi-chevron-right me-1"></i>Historia</a></li>
+                    <li><a href="carreras.html"><i class="bi bi-chevron-right me-1"></i>Carreras</a></li>
+                    <li><a href="contacto.html"><i class="bi bi-chevron-right me-1"></i>Contacto</a></li>
+                    <li><a href="noticias.html"><i class="bi bi-chevron-right me-1"></i>Noticias</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Contacto</h5>
+                <ul class="list-unstyled mt-2" style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">
+                    <li><i class="bi bi-geo-alt-fill me-2" style="color: var(--unphu-gold);"></i>Av. John F. Kennedy, Santo Domingo</li>
+                    <li><i class="bi bi-telephone-fill me-2" style="color: var(--unphu-gold);"></i>(809) 562-6601</li>
+                    <li><i class="bi bi-envelope-fill me-2" style="color: var(--unphu-gold);"></i>info@unphu.edu.do</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container text-center">
+        <p style="color:rgba(255,255,255,0.4); font-size:0.85rem;">
+            &copy; 2026 UNPHU — Universidad Nacional Pedro Henríquez Ureña
+        </p>
+        <!-- enlace que abre el modal -->
+        <a href="#" data-bs-toggle="modal" data-bs-target="#privacidadModal" 
+           style="color:rgba(255,255,255,0.5); font-size:0.8rem;">
+            <i class="bi bi-shield-lock me-1"></i>Políticas de Privacidad
+        </a>
+    </div>
+    </div>
+</footer>
 
-    <footer>
-        <p>&copy; 2026 UNPHU</p>
-    </footer>
+<a href="contacto.html" class="fixed-chat-btn">
+    <div class="btn-pulse"></div>
+    <i class="bi bi-chat-dots-fill"></i>
+    <span>En línea</span>
+</a>
+
+<!-- modal politicas de privacidad -->
+<div class="modal fade" id="privacidadModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content border-0 shadow-lg" style="border-radius:20px; overflow:hidden;">
+            <div class="modal-header" style="background: linear-gradient(135deg, #006400, #004d00); border:none;">
+                <h5 class="modal-title text-white fw-bold">
+                    <i class="bi bi-shield-lock-fill me-2"></i>Políticas de Privacidad
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body p-4">
+                <p class="text-muted small">Última actualización: enero 2026</p>
+                <p>En la <strong>Universidad Nacional Pedro Henríquez Ureña (UNPHU)</strong> nos comprometemos a proteger la privacidad de nuestros usuarios. Esta política explica cómo recopilamos, usamos y protegemos tu información personal.</p>
+
+                <h6 class="fw-bold text-success mt-4"><i class="bi bi-1-circle-fill me-2"></i>Información que recopilamos</h6>
+                <ol>
+                    <li>Nombre completo y apellidos</li>
+                    <li>Correo electrónico y número de teléfono</li>
+                    <li>Información académica previa</li>
+                    <li>Datos de navegación en nuestro sitio web</li>
+                    <li>Información enviada a través de formularios de contacto</li>
+                </ol>
+
+                <h6 class="fw-bold text-success mt-4"><i class="bi bi-shield-check me-2"></i>Cómo usamos tu información</h6>
+                <ul>
+                    <li>Para procesar solicitudes de admisión</li>
+                    <li>Para enviarte información sobre carreras y eventos</li>
+                    <li>Para mejorar nuestros servicios universitarios</li>
+                    <li>Para contactarte en respuesta a tus consultas</li>
+                    <li>Para cumplir con requisitos legales y académicos</li>
+                </ul>
+
+                <h6 class="fw-bold text-success mt-4"><i class="bi bi-lock-fill me-2"></i>Protección de datos</h6>
+                <p>Tu información es almacenada de forma segura y no será compartida con terceros sin tu consentimiento, salvo que la ley lo requiera.</p>
+
+                <h6 class="fw-bold text-success mt-4"><i class="bi bi-envelope-fill me-2"></i>Contacto</h6>
+                <p class="mb-0">Si tienes preguntas puedes escribirnos a <a href="mailto:info@unphu.edu.do" class="text-success">info@unphu.edu.do</a> o llamarnos al (809) 562-6601.</p>
+            </div>
+            <div class="modal-footer border-0">
+                <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button class="btn btn-unphu" data-bs-dismiss="modal">
+                    <i class="bi bi-check-circle-fill me-2"></i>Entendido
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

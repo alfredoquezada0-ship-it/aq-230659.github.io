@@ -1,0 +1,23 @@
+/* estilos para la pagina de noticias */
+
+/* card de cada articulo */
+.articulo-card {
+    background: white;
+    border-radius: 12px;
+    border-left: 5px solid #006400;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+    transition: all 0.3s ease;
+}
+
+/* efecto hover en el articulo */
+.articulo-card:hover {
+    transform: translateX(6px);
+    box-shadow: 0 8px 28px rgba(0,100,0,0.15);
+    border-left-color: #ffd700;
+}
+
+/* hover en redes sociales del footer */
+footer .bi-facebook:hover { color: #1877f2 !important; }
+footer .bi-instagram:hover { color: #e1306c !important; }
+footer .bi-twitter-x:hover { color: #ffffff !important; }
+footer .bi-youtube:hover { color: #ff0000 !important; }

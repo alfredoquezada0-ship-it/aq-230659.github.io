@@ -1,0 +1,272 @@
+/* estilos para el modo oscuro */
+
+/* boton del navbar */
+#darkModeToggle {
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.3);
+    color: white;
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* cuando paso el mouse por el boton */
+#darkModeToggle:hover {
+    background: #ffd700;
+    color: #1a1a2e;
+    border-color: #ffd700;
+}
+
+/* cuando el modo oscuro esta activado cambio el fondo de la pagina */
+body.dark-mode {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
+}
+
+/* las secciones blancas */
+body.dark-mode .bg-white,
+body.dark-mode .section-wrapper,
+body.dark-mode .section-wrapper:nth-child(even) {
+    background-color: #1e1e1e !important;
+}
+
+/* fondo gris claro */
+body.dark-mode .bg-light {
+    background-color: #2a2a2a !important;
+}
+
+/* texto gris */
+body.dark-mode .text-muted {
+    color: #999999 !important;
+}
+
+/* las cards */
+body.dark-mode .card,
+body.dark-mode .contact-card,
+body.dark-mode .carrera-card {
+    background-color: #1e1e1e !important;
+    border-color: #333333 !important;
+    color: #e0e0e0 !important;
+}
+
+/* footer de las cards */
+body.dark-mode .card-footer.bg-white {
+    background-color: #1e1e1e !important;
+}
+
+/* la tabla */
+body.dark-mode .table {
+    color: #e0e0e0 !important;
+    border-color: #333333 !important;
+}
+
+body.dark-mode .table tbody tr {
+    background-color: #1e1e1e !important;
+}
+
+/* cuando paso el mouse por la tabla */
+body.dark-mode .table tbody tr:hover {
+    background-color: #2a2a2a !important;
+}
+
+/* los inputs y selects */
+body.dark-mode .form-control,
+body.dark-mode .form-select {
+    background-color: #2a2a2a !important;
+    border-color: #333333 !important;
+    color: #e0e0e0 !important;
+}
+
+/* el placeholder de los inputs */
+body.dark-mode .form-control::placeholder {
+    color: #999999 !important;
+}
+
+/* el accordion */
+body.dark-mode .accordion-item {
+    background-color: #1e1e1e !important;
+    border-color: #333333 !important;
+}
+
+body.dark-mode .accordion-button {
+    background-color: #2a2a2a !important;
+    color: #ffd700 !important;
+}
+
+/* cuando el accordion esta abierto */
+body.dark-mode .accordion-button:not(.collapsed) {
+    background: linear-gradient(135deg, #006400, #004d00) !important;
+    color: white !important;
+}
+
+body.dark-mode .accordion-body {
+    background-color: #1e1e1e !important;
+    color: #e0e0e0 !important;
+}
+
+/* la seccion de mision y vision */
+body.dark-mode .collapse-section {
+    background: #2a2a2a !important;
+}
+
+/* los testimonios */
+body.dark-mode .testimonio {
+    background: #2a2a2a !important;
+    color: #e0e0e0 !important;
+}
+
+/* las alertas verdes */
+body.dark-mode .alert-unphu {
+    background: #2a2a2a !important;
+    color: #a5d6a7 !important;
+    border-color: #006400 !important;
+}
+
+/* los modales */
+body.dark-mode .modal-content {
+    background-color: #1e1e1e !important;
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .modal-body,
+body.dark-mode .modal-footer {
+    background-color: #1e1e1e !important;
+}
+
+/* el titulo de seccion */
+body.dark-mode .section-title {
+    color: #66bb6a !important;
+}
+
+/* transicion suave para que no sea tan brusco el cambio */
+body, body * {
+    transition: background-color 0.3s, color 0.2s, border-color 0.3s;
+}
+
+/* secciones con fondo verde claro (inline style) */
+body.dark-mode [style*="#f0f7f0"],
+body.dark-mode [style*="#e8f5e9"],
+body.dark-mode [style*="f0f7f0"],
+body.dark-mode [style*="e8f5e9"] {
+    background: #1e1e1e !important;
+}
+
+/* hover de facultades */
+body.dark-mode .hover-faculty {
+    background: #2a2a2a !important;
+    border-color: #444 !important;
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .hover-faculty small {
+    color: #999 !important;
+}
+
+/* cards del proceso de admision */
+body.dark-mode .card.border-0.shadow-sm {
+    background-color: #1e1e1e !important;
+    color: #e0e0e0 !important;
+}
+
+/* tabla de facultades y campo laboral en carreras */
+body.dark-mode .table-responsive {
+    background-color: #1e1e1e !important;
+}
+
+body.dark-mode .table-unphu tbody tr {
+    background-color: #1e1e1e !important;
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .table-unphu tbody td {
+    border-color: #333 !important;
+    color: #e0e0e0 !important;
+}
+
+/* alerta verde de campo laboral */
+body.dark-mode .alert[style*="background:linear-gradient"] {
+    background: #1e3a1e !important;
+    color: #a5d6a7 !important;
+    border-color: #006400 !important;
+}
+
+/* contenedor principal de carreras */
+body.dark-mode .seccion-carreras {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
+}
+
+/* caja de requisitos (antes tenia style inline) */
+.requisitos-box {
+    background: #f0f7f0;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+body.dark-mode .requisitos-box {
+    background: #2a2a2a !important;
+    color: #e0e0e0 !important;
+}
+
+/* alerta de campo laboral (antes tenia style inline) */
+.alerta-laboral {
+    background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+    border-left: 5px solid #006400;
+    border-radius: 10px;
+    color: #1b5e20;
+}
+
+body.dark-mode .alerta-laboral {
+    background: #1e3a1e !important;
+    color: #a5d6a7 !important;
+    border-color: #006400 !important;
+}
+
+/* filas de la tabla en modo oscuro */
+body.dark-mode .table-unphu tbody tr td {
+    background-color: #1e1e1e !important;
+    color: #e0e0e0 !important;
+    border-color: #333 !important;
+}
+
+/* cuando paso el mouse por las filas */
+body.dark-mode .table-hover tbody tr:hover td {
+    background-color: #2a2a2a !important;
+    color: #e0e0e0 !important;
+}
+
+/* el contenedor de la tabla */
+body.dark-mode .table-responsive {
+    background-color: #1e1e1e !important;
+    border-radius: 12px !important;
+}
+
+/* el strong dentro de la tabla */
+body.dark-mode .table-unphu tbody td strong {
+    color: #e0e0e0 !important;
+}
+
+/* contenedor principal de noticias */
+body.dark-mode .seccion-noticias {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
+}
+
+/* card de cada articulo */
+body.dark-mode .articulo-card {
+    background-color: #1e1e1e !important;
+    color: #e0e0e0 !important;
+}
+
+/* titulo del articulo */
+body.dark-mode .articulo-titulo {
+    color: #e0e0e0 !important;
+}
+
+/* hover en redes sociales del footer */
+footer .bi-facebook:hover { color: #1877f2 !important; }
+footer .bi-instagram:hover { color: #e1306c !important; }
+footer .bi-twitter-x:hover { color: #ffffff !important; }
+footer .bi-youtube:hover { color: #ff0000 !important; }

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Noticias y artículos de la UNPHU y el mundo universitario dominicano.">
+    <meta name="keywords" content="UNPHU, noticias, articulos, universidad, educacion, dominicana">
+    <meta name="author" content="UNPHU">
+    <meta name="robots" content="index, follow">
+    <title>UNPHU - Noticias</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="css/noticias.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-unphu sticky-top">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+            <img src="img/logonav.png" alt="UNPHU" height="40" style="filter: brightness(0) invert(1);">
+            <span class="navbar-brand-text d-none d-md-block">UNPHU</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMain">
+            <ul class="navbar-nav ms-auto gap-1">
+                <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-fill me-1"></i>Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="historia.html"><i class="bi bi-book-fill me-1"></i>Historia</a></li>
+                <li class="nav-item"><a class="nav-link" href="carreras.html"><i class="bi bi-mortarboard-fill me-1"></i>Carreras</a></li>
+                <li class="nav-item"><a class="nav-link active" href="noticias.html"><i class="bi bi-newspaper me-1"></i>Noticias</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html"><i class="bi bi-envelope-fill me-1"></i>Contacto</a></li>
+                <!-- boton modo oscuro -->
+                <li class="nav-item ms-2">
+                    <button id="darkModeToggle">
+                        <i class="bi bi-moon-stars-fill me-1"></i> Modo Oscuro
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- hero -->
+<div style="background: linear-gradient(135deg, #006400, #004d00); color:white; padding: 60px 0;">
+    <div class="container text-center">
+        <h1 style="font-family:'Playfair Display',serif; font-size:3rem; font-weight:900;">Noticias</h1>
+        <p class="lead mt-2" style="color:rgba(255,255,255,0.8);">Lo último de la UNPHU y el mundo universitario</p>
+    </div>
+</div>
+
+<!-- contenido principal -->
+<div class="container py-5 seccion-noticias">
+
+    <!-- filtros de categoria -->
+    <div class="d-flex flex-wrap gap-2 mb-4">
+        <button class="btn btn-unphu btn-sm" onclick="filtrar('todas')" id="btn-todas">Todas</button>
+        <button class="btn btn-outline-success btn-sm" onclick="filtrar('unphu')" id="btn-unphu">UNPHU</button>
+        <button class="btn btn-outline-success btn-sm" onclick="filtrar('universidad')" id="btn-universidad">Mundo Universitario</button>
+        <button class="btn btn-outline-success btn-sm" onclick="filtrar('tecnologia')" id="btn-tecnologia">Tecnología</button>
+        <button class="btn btn-outline-success btn-sm" onclick="filtrar('salud')" id="btn-salud">Salud</button>
+    </div>
+
+    <!-- lista de articulos -->
+    <div id="lista-noticias">
+
+        <!-- articulo 1 -->
+        <div class="articulo-item mb-4" data-categoria="unphu">
+            <div class="articulo-card p-4">
+                <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2">
+                    <span class="badge bg-success">UNPHU</span>
+                    <small class="text-muted"><i class="bi bi-calendar3 me-1"></i>15 de febrero, 2026</small>
+                </div>
+                <h4 class="fw-bold articulo-titulo">UNPHU inaugura nuevo laboratorio de inteligencia artificial</h4>
+                <p class="text-muted">La universidad inauguró sus nuevas instalaciones de investigación en inteligencia artificial y ciencia de datos, equipadas con tecnología de última generación para beneficio de estudiantes de ingeniería y sistemas.</p>
+                <div class="d-flex align-items-center gap-3 flex-wrap">
+                    <small class="text-muted"><i class="bi bi-person-fill me-1"></i>Redacción UNPHU</small>
+                    <small class="text-muted"><i class="bi bi-clock me-1"></i>3 min de lectura</small>
+                    <button class="btn btn-sm btn-outline-success ms-auto" data-bs-toggle="modal" data-bs-target="#noticiaModal"
+                        onclick="verNoticia('UNPHU inaugura nuevo laboratorio de inteligencia artificial', 'La universidad inauguró sus nuevas instalaciones de investigación en inteligencia artificial y ciencia de datos. El laboratorio cuenta con 40 computadoras de alto rendimiento, servidores dedicados y software especializado como TensorFlow, PyTorch y acceso a plataformas de computación en la nube. Este proyecto representa una inversión de más de 5 millones de pesos y beneficiará directamente a los estudiantes de Ingeniería en Sistemas, Ingeniería Industrial y carreras afines. El rector destacó que esta es una apuesta de la UNPHU por mantenerse a la vanguardia tecnológica del país.')">
+                        Leer más <i class="bi bi-arrow-right ms-1"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- articulo 2 -->
+        <div class="articulo-item mb-4" data-categoria="universidad">
+            <div class="articulo-card p-4">
+                <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2">
+                    <span class="badge bg-primary">Mundo Universitario</span>
+                    <small class="text-muted"><i class="bi bi-calendar3 me-1"></i>10 de febrero, 2026</small>
+                </div>
+                <h4 class="fw-bold articulo-titulo">República Dominicana sube en ranking de educación superior del Caribe</h4>
+                <p class="text-muted">Según el más reciente informe regional, las universidades dominicanas han mejorado su posición en los rankings de calidad educativa, impulsadas por inversiones en investigación y alianzas internacionales.</p>
+                <div class="d-flex align-items-center gap-3 flex-wrap">
+                    <small class="text-muted"><i class="bi bi-person-fill me-1"></i>Redacción Académica</small>
+                    <small class="text-muted"><i class="bi bi-clock me-1"></i>4 min de lectura</small>
+                    <button class="btn btn-sm btn-outline-success ms-auto" data-bs-toggle="modal" data-bs-target="#noticiaModal"
+                        onclick="verNoticia('República Dominicana sube en ranking de educación superior del Caribe', 'El informe publicado por el organismo regional de educación superior destaca que las universidades dominicanas han avanzado significativamente en indicadores de calidad docente, infraestructura y vinculación con el sector productivo. Instituciones como la UNPHU han sido reconocidas por sus programas de investigación y su compromiso con la sostenibilidad ambiental. Los expertos señalan que el aumento en becas y programas de intercambio internacional ha sido clave para este avance.')">
+                        Leer más <i class="bi bi-arrow-right ms-1"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- articulo 3 -->
+        <div class="articulo-item mb-4" data-categoria="unphu">
+            <div class="articulo-card p-4">
+                <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2">
+                    <span class="badge bg-success">UNPHU</span>
+                    <small class="text-muted"><i class="bi bi-calendar3 me-1"></i>5 de febrero, 2026</small>
+                </div>
+                <h4 class="fw-bold articulo-titulo">Estudiantes de Medicina de la UNPHU ganan concurso nacional de casos clínicos</h4>
+                <p class="text-muted">Un equipo de cuatro estudiantes de la Facultad de Ciencias de la Salud representó a la UNPHU en el concurso nacional obteniendo el primer lugar con un caso sobre enfermedades tropicales.</p>
+                <div class="d-flex align-items-center gap-3 flex-wrap">
+                    <small class="text-muted"><i class="bi bi-person-fill me-1"></i>Redacción UNPHU</small>
+                    <small class="text-muted"><i class="bi bi-clock me-1"></i>2 min de lectura</small>
+                    <button class="btn btn-sm btn-outline-success ms-auto" data-bs-toggle="modal" data-bs-target="#noticiaModal"
+                        onclick="verNoticia('Estudiantes de Medicina de la UNPHU ganan concurso nacional de casos clínicos', 'El equipo conformado por Ana Martínez, Luis Gómez, Carmen Santos y Pedro Jiménez presentó un análisis detallado sobre el diagnóstico y tratamiento del dengue hemorrágico en pacientes pediátricos. Su presentación fue calificada como sobresaliente por el jurado compuesto por médicos especialistas de varios hospitales del país. Este logro reafirma la calidad de la formación médica que ofrece la UNPHU y el compromiso de sus estudiantes con la excelencia académica.')">
+                        Leer más <i class="bi bi-arrow-right ms-1"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- articulo 4 -->
+        <div class="articulo-item mb-4" data-categoria="tecnologia">
+            <div class="articulo-card p-4">
+                <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2">
+                    <span class="badge bg-warning text-dark">Tecnología</span>
+                    <small class="text-muted"><i class="bi bi-calendar3 me-1"></i>28 de enero, 2026</small>
+                </div>
+                <h4 class="fw-bold articulo-titulo">La inteligencia artificial transforma la educación universitaria en el Caribe</h4>
+                <p class="text-muted">Universidades de toda la región están integrando herramientas de inteligencia artificial en sus currículos para preparar a los estudiantes para el mercado laboral del futuro.</p>
+                <div class="d-flex align-items-center gap-3 flex-wrap">
+                    <small class="text-muted"><i class="bi bi-person-fill me-1"></i>Tecnología Educativa</small>
+                    <small class="text-muted"><i class="bi bi-clock me-1"></i>5 min de lectura</small>
+                    <button class="btn btn-sm btn-outline-success ms-auto" data-bs-toggle="modal" data-bs-target="#noticiaModal"
+                        onclick="verNoticia('La inteligencia artificial transforma la educación universitaria en el Caribe', 'El uso de inteligencia artificial en el aula universitaria ha crecido de forma exponencial en los últimos dos años. Desde asistentes virtuales de tutoría hasta sistemas de evaluación automatizada, las universidades caribeñas están adoptando estas tecnologías para mejorar la experiencia educativa. La UNPHU ha sido pionera en este movimiento, incorporando módulos de IA en carreras como Ingeniería en Sistemas, Administración de Empresas y Medicina. Los expertos coinciden en que los profesionales que dominen estas herramientas tendrán una ventaja significativa en el mercado laboral.')">
+                        Leer más <i class="bi bi-arrow-right ms-1"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- articulo 5 -->
+        <div class="articulo-item mb-4" data-categoria="salud">
+            <div class="articulo-card p-4">
+                <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2">
+                    <span class="badge bg-danger">Salud</span>
+                    <small class="text-muted"><i class="bi bi-calendar3 me-1"></i>20 de enero, 2026</small>
+                </div>
+                <h4 class="fw-bold articulo-titulo">Banco Nacional de Cerebros de la UNPHU publica nueva investigación sobre Alzheimer</h4>
+                <p class="text-muted">El BNC-UNPHU, primero en su tipo en el Caribe, publicó los resultados de una investigación de tres años sobre factores de riesgo del Alzheimer en la población dominicana.</p>
+                <div class="d-flex align-items-center gap-3 flex-wrap">
+                    <small class="text-muted"><i class="bi bi-person-fill me-1"></i>Investigación Científica</small>
+                    <small class="text-muted"><i class="bi bi-clock me-1"></i>6 min de lectura</small>
+                    <button class="btn btn-sm btn-outline-success ms-auto" data-bs-toggle="modal" data-bs-target="#noticiaModal"
+                        onclick="verNoticia('Banco Nacional de Cerebros de la UNPHU publica nueva investigación sobre Alzheimer', 'El Banco Nacional de Cerebros de la UNPHU presentó los resultados de un estudio longitudinal de tres años que analizó más de 200 casos de pacientes dominicanos con Alzheimer. La investigación identificó factores de riesgo específicos en la población caribeña que no habían sido documentados previamente en la literatura científica internacional. Los hallazgos fueron publicados en una revista indexada de neurología y han generado interés en la comunidad científica de América Latina. El director del BNC-UNPHU destacó que este trabajo posiciona a la institución como un referente en investigación neurológica en la región.')">
+                        Leer más <i class="bi bi-arrow-right ms-1"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- articulo 6 -->
+        <div class="articulo-item mb-4" data-categoria="unphu">
+            <div class="articulo-card p-4">
+                <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2">
+                    <span class="badge bg-success">UNPHU</span>
+                    <small class="text-muted"><i class="bi bi-calendar3 me-1"></i>12 de enero, 2026</small>
+                </div>
+                <h4 class="fw-bold articulo-titulo">UNPHU abre convocatoria de becas para el cuatrimestre enero-abril 2026</h4>
+                <p class="text-muted">La institución pone a disposición de estudiantes nuevos y activos una serie de becas parciales y totales para el nuevo cuatrimestre. El proceso de solicitud estará abierto hasta el 28 de febrero.</p>
+                <div class="d-flex align-items-center gap-3 flex-wrap">
+                    <small class="text-muted"><i class="bi bi-person-fill me-1"></i>Redacción UNPHU</small>
+                    <small class="text-muted"><i class="bi bi-clock me-1"></i>2 min de lectura</small>
+                    <button class="btn btn-sm btn-outline-success ms-auto" data-bs-toggle="modal" data-bs-target="#noticiaModal"
+                        onclick="verNoticia('UNPHU abre convocatoria de becas para el cuatrimestre enero-abril 2026', 'El Departamento de Bienestar Estudiantil de la UNPHU anunció la apertura de la convocatoria de becas para el cuatrimestre enero-abril 2026. Se ofrecen becas de excelencia académica para estudiantes con promedio superior a 90 puntos, becas socioeconómicas para estudiantes con necesidades comprobadas y becas deportivas para atletas de alto rendimiento. Los interesados deben completar el formulario en línea disponible en el portal estudiantil y adjuntar los documentos requeridos antes del 28 de febrero de 2026.')">
+                        Leer más <i class="bi bi-arrow-right ms-1"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- mensaje cuando no hay resultados -->
+    <div id="sin-resultados" class="text-center py-5 d-none">
+        <i class="bi bi-search" style="font-size:3rem; color:#ccc;"></i>
+        <p class="text-muted mt-3">No hay noticias en esta categoría por ahora.</p>
+    </div>
+
+</div>
+
+<!-- modal para leer la noticia completa -->
+<div class="modal fade" id="noticiaModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content border-0 shadow-lg" style="border-radius:20px; overflow:hidden;">
+            <div class="modal-header" style="background: linear-gradient(135deg, #006400, #004d00); border:none;">
+                <h5 class="modal-title text-white fw-bold" id="noticiaTitulo">Noticia</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body p-4">
+                <p id="noticiaContenido" class="text-muted"></p>
+            </div>
+            <div class="modal-footer border-0">
+                <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- footer -->
+<footer>
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <h5><i class="bi bi-mortarboard-fill me-2"></i>UNPHU</h5>
+                <p class="small mt-2" style="color: rgba(255,255,255,0.6);">Universidad Nacional Pedro Henríquez Ureña. Formando líderes desde 1966 para transformar la República Dominicana.</p>
+                <!-- redes sociales -->
+                <div class="d-flex gap-3 mt-3">
+                    <a href="https://www.facebook.com/unphu" target="_blank"><i class="bi bi-facebook" style="font-size:1.5rem; color:rgba(255,255,255,0.7);"></i></a>
+                    <a href="https://www.instagram.com/unphu" target="_blank"><i class="bi bi-instagram" style="font-size:1.5rem; color:rgba(255,255,255,0.7);"></i></a>
+                    <a href="https://www.twitter.com/unphu" target="_blank"><i class="bi bi-twitter-x" style="font-size:1.5rem; color:rgba(255,255,255,0.7);"></i></a>
+                    <a href="https://www.youtube.com/@unphu" target="_blank"><i class="bi bi-youtube" style="font-size:1.5rem; color:rgba(255,255,255,0.7);"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h5>Navegación</h5>
+                <ul class="list-unstyled mt-2" style="color: rgba(255,255,255,0.7);">
+                    <li><a href="index.html"><i class="bi bi-chevron-right me-1"></i>Inicio</a></li>
+                    <li><a href="historia.html"><i class="bi bi-chevron-right me-1"></i>Historia</a></li>
+                    <li><a href="carreras.html"><i class="bi bi-chevron-right me-1"></i>Carreras</a></li>
+                    <li><a href="noticias.html"><i class="bi bi-chevron-right me-1"></i>Noticias</a></li>
+                    <li><a href="contacto.html"><i class="bi bi-chevron-right me-1"></i>Contacto</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Contacto</h5>
+                <ul class="list-unstyled mt-2" style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">
+                    <li><i class="bi bi-geo-alt-fill me-2" style="color: var(--unphu-gold);"></i>Av. John F. Kennedy, Santo Domingo</li>
+                    <li><i class="bi bi-telephone-fill me-2" style="color: var(--unphu-gold);"></i>(809) 562-6601</li>
+                    <li><i class="bi bi-envelope-fill me-2" style="color: var(--unphu-gold);"></i>info@unphu.edu.do</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-divider text-center" style="color: rgba(255,255,255,0.4); font-size: 0.85rem;">
+            &copy; 2026 UNPHU — Universidad Nacional Pedro Henríquez Ureña. Todos los derechos reservados.
+            <br>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#privacidadModal" style="color:rgba(255,255,255,0.5); font-size:0.8rem;">
+                <i class="bi bi-shield-lock me-1"></i>Políticas de Privacidad
+            </a>
+        </div>
+    </div>
+</footer>
+
+<!-- boton flotante -->
+<a href="contacto.html" class="fixed-chat-btn">
+    <div class="btn-pulse"></div>
+    <i class="bi bi-chat-dots-fill"></i>
+    <span>Contáctanos</span>
+</a>
+
+<!-- modal politicas de privacidad -->
+<div class="modal fade" id="privacidadModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content border-0 shadow-lg" style="border-radius:20px; overflow:hidden;">
+            <div class="modal-header" style="background: linear-gradient(135deg, #006400, #004d00); border:none;">
+                <h5 class="modal-title text-white fw-bold">
+                    <i class="bi bi-shield-lock-fill me-2"></i>Políticas de Privacidad
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body p-4">
+                <p class="text-muted small">Última actualización: enero 2026</p>
+                <p>En la <strong>Universidad Nacional Pedro Henríquez Ureña (UNPHU)</strong> nos comprometemos a proteger la privacidad de nuestros usuarios.</p>
+                <h6 class="fw-bold text-success mt-4"><i class="bi bi-1-circle-fill me-2"></i>Información que recopilamos</h6>
+                <ol>
+                    <li>Nombre completo y apellidos</li>
+                    <li>Correo electrónico y número de teléfono</li>
+                    <li>Información académica previa</li>
+                    <li>Datos de navegación en nuestro sitio web</li>
+                    <li>Información enviada a través de formularios de contacto</li>
+                </ol>
+                <h6 class="fw-bold text-success mt-4"><i class="bi bi-shield-check me-2"></i>Cómo usamos tu información</h6>
+                <ul>
+                    <li>Para procesar solicitudes de admisión</li>
+                    <li>Para enviarte información sobre carreras y eventos</li>
+                    <li>Para mejorar nuestros servicios universitarios</li>
+                    <li>Para contactarte en respuesta a tus consultas</li>
+                    <li>Para cumplir con requisitos legales y académicos</li>
+                </ul>
+                <h6 class="fw-bold text-success mt-4"><i class="bi bi-lock-fill me-2"></i>Protección de datos</h6>
+                <p class="mb-0">Tu información es almacenada de forma segura y no será compartida con terceros sin tu consentimiento.</p>
+            </div>
+            <div class="modal-footer border-0">
+                <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button class="btn btn-unphu" data-bs-dismiss="modal"><i class="bi bi-check-circle-fill me-2"></i>Entendido</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
