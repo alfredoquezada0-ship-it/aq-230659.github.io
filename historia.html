@@ -2,89 +2,309 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Universidad Nacional Pedro Henríquez Ureña - Institución académica de excelencia en la República Dominicana.">
+    <meta name="keywords" content="UNPHU, universidad, educación superior, República Dominicana, carreras universitarias">
+    <meta name="author" content="UNPHU">
+    <meta name="robots" content="index, follow">
     <title>UNPHU - Historia</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
 </head>
-<body>
-    <header>
-        <h1>Historia de la UNPHU</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="historia.html">Historia</a></li>
-                <li><a href="carreras.html">Carreras</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+<body style="background:#f8f9fa;">
+
+<nav class="navbar navbar-expand-lg navbar-unphu sticky-top">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+            <img src="img/logonav.png" alt="UNPHU" height="40" style="filter: brightness(0) invert(1);">
+            <span class="navbar-brand-text d-none d-md-block">UNPHU</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMain">
+            <ul class="navbar-nav ms-auto gap-1">
+                <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-fill me-1"></i>Inicio</a></li>
+                <li class="nav-item"><a class="nav-link active" href="historia.html"><i class="bi bi-book-fill me-1"></i>Historia</a></li>
+                <li class="nav-item"><a class="nav-link" href="carreras.html"><i class="bi bi-mortarboard-fill me-1"></i>Carreras</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html"><i class="bi bi-envelope-fill me-1"></i>Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="noticias.html"><i class="bi bi-newspaper me-1"></i>Noticias</a></li>
+                <li class="nav-item ms-2">
+  <button id="darkModeToggle">
+    <i class="bi bi-moon-stars-fill me-1"></i> Modo Oscuro
+  </button>
+</li>
             </ul>
-        </nav>
-    </header>
-
-    <!-- Imagen junto al título -->
-    <section>
-        <h2>Nuestra Universidad</h2>
-        <img
-            class="hero-img"
-            src="img/unphu.jpg"
-            alt="Campus UNPHU - Vista panorámica">
-        <p>La Universidad Nacional Pedro Henríquez Ureña (UNPHU) es una institución privada de educación superior ubicada en Santo Domingo, República Dominicana. Su campus de más de 250,000 m² es considerado uno de los más modernos y completos del país.</p>
-    </section>
-
-    <!-- Fundación con imagen flotante -->
-    <section class="clearfix">
-        <h2>Fundación</h2>
-        <img
-            class="img-float"
-            src="img/edficio.jpg"
-            alt="Edificio UNPHU">
-        <p>La UNPHU fue formalmente constituida el <strong>21 de abril de 1966</strong>, siendo la primera universidad privada creada en la capital del país. Su creación fue impulsada por la Fundación Universitaria Dominicana, Inc. (FUDI), una entidad privada y apolítica dedicada al fomento de la educación superior.</p>
-        <p>Inició sus labores el <strong>19 de noviembre de 1966</strong> en un edificio cedido por el Gobierno en la Avenida John F. Kennedy. La institución fue nombrada en honor al prominente escritor y humanista dominicano <em>Pedro Henríquez Ureña</em>.</p>
-        <p>El Gobierno Dominicano le otorgó personalidad jurídica mediante el Decreto No. 1090 del 21 de marzo de 1967, autorizándola a expedir títulos académicos con la misma validez que los de instituciones oficiales.</p>
-    </section>
-
-    <!-- Logros con imagen flotante -->
-    <section class="clearfix">
-        <h2>Logros</h2>
-        <img
-            class="img-float"
-            src="img/campus.webp"
-            alt="Campus UNPHU logros">
-        <ul>
-            <li>Más de 50 años formando profesionales de excelencia.</li>
-            <li>Reconocimiento nacional e internacional en diversas áreas académicas.</li>
-            <li>Participación activa en el <strong>UI GreenMetric World University Rankings</strong> por sus esfuerzos en sostenibilidad.</li>
-            <li>Primer <strong>Banco Nacional de Cerebros (BNC-UNPHU)</strong> en el país y el Caribe.</li>
-            <li>Programas de investigación, extensión y vinculación con la industria.</li>
-            <li>Campus secundario en La Vega y Granja Experimental Agropecuaria de más de 7,500,000 m².</li>
-        </ul>
-    </section>
-
-    <!-- Galería de fotos al final -->
-    <section>
-        <h2>Galería del Campus</h2>
-        <div class="galeria">
-            <img
-                src="img/campus.webp"
-                alt="Vista principal del campus UNPHU">
-            <img
-                src="img/edficio.jpg"
-                alt="Edificios del campus">
-            <img
-                src="img/unphu.jpg"
-                alt="Áreas verdes UNPHU">
         </div>
-    </section>
+    </div>
+</nav>
 
-    <footer>
-        <p>&copy; 2026 UNPHU</p>
-    </footer>
+<!-- Hero -->
+<div style="background: linear-gradient(135deg, #006400, #004d00); color: white; padding: 60px 0;">
+    <div class="container text-center">
+        <h1 style="font-family: 'Playfair Display', serif; font-size: 3rem; font-weight: 900;">Historia de la UNPHU</h1>
+        <p class="lead mt-3" style="color: rgba(255,255,255,0.8);">Más de 50 años construyendo el futuro de la República Dominicana</p>
+    </div>
+</div>
 
-    <!-- Position fixed con iframe YouTube -->
-    <div class="fixed-box">
-        <iframe width="200" height="115"
-            src="https://www.youtube.com/embed/yfoY53QXEnI"
-            frameborder="0"
-            allowfullscreen>
-        </iframe>
+<div class="container py-5">
+    <!-- Hero img responsive -->
+    <div class="row g-5 mb-5 align-items-center">
+        <div class="col-lg-7">
+            <img src="img/unphu.jpg" alt="Campus UNPHU" class="hero-img-hist img-fluid">
+        </div>
+        <div class="col-lg-5">
+            <h2 class="section-title">Nuestra Universidad</h2>
+            <p>La Universidad Nacional Pedro Henríquez Ureña (UNPHU) es una institución privada de educación superior ubicada en Santo Domingo, República Dominicana.</p>
+            <p>Su campus de más de <strong>250,000 m²</strong> es considerado uno de los más modernos y completos del país, con instalaciones de última generación para el desarrollo académico.</p>
+            <button class="btn btn-unphu" data-bs-toggle="modal" data-bs-target="#videoModal">
+                <i class="bi bi-play-circle-fill me-2"></i>Ver Video Institucional
+            </button>
+        </div>
     </div>
 
+    <!-- Timeline -->
+    <div class="row g-5 mb-5">
+        <div class="col-lg-6">
+            <h2 class="section-title">Línea del Tiempo</h2>
+            <div class="timeline-item">
+                <div class="timeline-year">1966</div>
+                <h6 class="fw-bold">Fundación</h6>
+                <p class="text-muted">La UNPHU fue formalmente constituida el <strong>21 de abril de 1966</strong>, siendo la primera universidad privada creada en la capital del país.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">Nov. 1966</div>
+                <h6 class="fw-bold">Inicio de labores</h6>
+                <p class="text-muted">Inició sus actividades académicas el <strong>19 de noviembre de 1966</strong> en un edificio cedido por el Gobierno en la Av. John F. Kennedy.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">1967</div>
+                <h6 class="fw-bold">Reconocimiento legal</h6>
+                <p class="text-muted">El Gobierno Dominicano le otorgó personalidad jurídica mediante el Decreto No. 1090 del 21 de marzo de 1967.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">Hoy</div>
+                <h6 class="fw-bold">Liderazgo académico</h6>
+                <p class="text-muted">Con más de 50 años de trayectoria, la UNPHU es referente nacional e internacional en educación superior de calidad.</p>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <h2 class="section-title">Logros Destacados</h2>
+            <div class="accordion" id="logrosAccordion">
+                <div class="accordion-item border-0 mb-2 shadow-sm rounded-3 overflow-hidden">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" style="background:#f0f7f0; color:#006400; font-weight:600;" type="button" data-bs-toggle="collapse" data-bs-target="#logro1">
+                            <i class="bi bi-trophy-fill me-2 text-warning"></i> GreenMetric Rankings
+                        </button>
+                    </h2>
+                    <div id="logro1" class="accordion-collapse collapse show" data-bs-parent="#logrosAccordion">
+                        <div class="accordion-body text-muted">Participación activa en el <strong>UI GreenMetric World University Rankings</strong> por sus esfuerzos en sostenibilidad ambiental y campus verde.</div>
+                    </div>
+                </div>
+                <div class="accordion-item border-0 mb-2 shadow-sm rounded-3 overflow-hidden">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" style="color:#006400; font-weight:600;" type="button" data-bs-toggle="collapse" data-bs-target="#logro2">
+                            <i class="bi bi-brain me-2 text-info"></i> Banco Nacional de Cerebros
+                        </button>
+                    </h2>
+                    <div id="logro2" class="accordion-collapse collapse" data-bs-parent="#logrosAccordion">
+                        <div class="accordion-body text-muted">Primer <strong>Banco Nacional de Cerebros (BNC-UNPHU)</strong> en el país y el Caribe, impulsando la investigación científica avanzada.</div>
+                    </div>
+                </div>
+                <div class="accordion-item border-0 mb-2 shadow-sm rounded-3 overflow-hidden">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" style="color:#006400; font-weight:600;" type="button" data-bs-toggle="collapse" data-bs-target="#logro3">
+                            <i class="bi bi-globe me-2 text-success"></i> Campus Secundario
+                        </button>
+                    </h2>
+                    <div id="logro3" class="accordion-collapse collapse" data-bs-parent="#logrosAccordion">
+                        <div class="accordion-body text-muted">Campus secundario en La Vega y Granja Experimental Agropecuaria de más de <strong>7,500,000 m²</strong> para investigación agrícola.</div>
+                    </div>
+                </div>
+                <div class="accordion-item border-0 shadow-sm rounded-3 overflow-hidden">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" style="color:#006400; font-weight:600;" type="button" data-bs-toggle="collapse" data-bs-target="#logro4">
+                            <i class="bi bi-people-fill me-2 text-primary"></i> Egresados de Excelencia
+                        </button>
+                    </h2>
+                    <div id="logro4" class="accordion-collapse collapse" data-bs-parent="#logrosAccordion">
+                        <div class="accordion-body text-muted">Más de 50 años formando profesionales de excelencia con reconocimiento nacional e internacional en diversas áreas académicas.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery -->
+    <h2 class="section-title">Galería del Campus</h2>
+    <div class="row g-3">
+        <div class="col-md-4">
+            <img src="img/campus.webp" alt="Campus UNPHU" class="galeria-img" data-bs-toggle="modal" data-bs-target="#imgModal1">
+        </div>
+        <div class="col-md-4">
+            <img src="img/edficio.jpg" alt="Edificio UNPHU" class="galeria-img" data-bs-toggle="modal" data-bs-target="#imgModal2">
+        </div>
+        <div class="col-md-4">
+            <img src="img/unphu.jpg" alt="Letrero UNPHU" class="galeria-img" data-bs-toggle="modal" data-bs-target="#imgModal3">
+        </div>
+    </div>
+    <p class="text-muted small mt-2 text-center"><i class="bi bi-hand-index me-1"></i>Haz clic en las imágenes para ampliarlas</p>
+</div>
+
+<!-- Video Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content border-0" style="border-radius:16px; overflow:hidden;">
+            <div class="modal-header" style="background: linear-gradient(135deg, #006400, #004d00); border:none;">
+                <h5 class="modal-title text-white fw-bold"><i class="bi bi-play-circle-fill me-2"></i>Video Institucional UNPHU</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body p-0">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/yfoY53QXEnI" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Image Modals -->
+<div class="modal fade" id="imgModal1" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content border-0 bg-dark">
+            <div class="modal-header border-0"><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body p-0"><img src="img/campus.webp" class="img-fluid w-100" alt="Campus" style="border-radius:0 0 12px 12px;"></div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="imgModal2" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content border-0 bg-dark">
+            <div class="modal-header border-0"><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body p-0"><img src="img/edficio.jpg" class="img-fluid w-100" alt="Edificio" style="border-radius:0 0 12px 12px;"></div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="imgModal3" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content border-0 bg-dark">
+            <div class="modal-header border-0"><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body p-0"><img src="img/unphu.jpg" class="img-fluid w-100" alt="UNPHU" style="border-radius:0 0 12px 12px;"></div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4">
+    <h5><i class="bi bi-mortarboard-fill me-2"></i>UNPHU</h5>
+    <p class="small mt-2" style="color: rgba(255,255,255,0.6);">Universidad Nacional Pedro Henríquez Ureña. Formando líderes desde 1966 para transformar la República Dominicana.</p>
+    <!-- redes sociales -->
+    <div class="d-flex gap-3 mt-3">
+        <a href="https://www.facebook.com/unphu" target="_blank" title="Facebook">
+            <i class="bi bi-facebook" style="font-size:1.5rem; color:rgba(255,255,255,0.7);"></i>
+        </a>
+        <a href="https://www.instagram.com/unphu" target="_blank" title="Instagram">
+            <i class="bi bi-instagram" style="font-size:1.5rem; color:rgba(255,255,255,0.7);"></i>
+        </a>
+        <a href="https://www.twitter.com/unphu" target="_blank" title="Twitter/X">
+            <i class="bi bi-twitter-x" style="font-size:1.5rem; color:rgba(255,255,255,0.7);"></i>
+        </a>
+        <a href="https://www.youtube.com/@unphu" target="_blank" title="YouTube">
+            <i class="bi bi-youtube" style="font-size:1.5rem; color:rgba(255,255,255,0.7);"></i>
+        </a>
+    </div>
+</div>
+            <div class="col-md-4">
+                <h5>Navegación</h5>
+                <ul class="list-unstyled mt-2" style="color: rgba(255,255,255,0.7);">
+                    <li><a href="index.html"><i class="bi bi-chevron-right me-1"></i>Inicio</a></li>
+                    <li><a href="historia.html"><i class="bi bi-chevron-right me-1"></i>Historia</a></li>
+                    <li><a href="carreras.html"><i class="bi bi-chevron-right me-1"></i>Carreras</a></li>
+                    <li><a href="contacto.html"><i class="bi bi-chevron-right me-1"></i>Contacto</a></li>
+                    <li><a href="noticias.html"><i class="bi bi-chevron-right me-1"></i>Noticias</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Contacto</h5>
+                <ul class="list-unstyled mt-2" style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">
+                    <li><i class="bi bi-geo-alt-fill me-2" style="color: var(--unphu-gold);"></i>Av. John F. Kennedy, Santo Domingo</li>
+                    <li><i class="bi bi-telephone-fill me-2" style="color: var(--unphu-gold);"></i>(809) 562-6601</li>
+                    <li><i class="bi bi-envelope-fill me-2" style="color: var(--unphu-gold);"></i>info@unphu.edu.do</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container text-center">
+        <p style="color:rgba(255,255,255,0.4); font-size:0.85rem;">
+            &copy; 2026 UNPHU — Universidad Nacional Pedro Henríquez Ureña
+        </p>
+        <!-- enlace que abre el modal -->
+        <a href="#" data-bs-toggle="modal" data-bs-target="#privacidadModal" 
+           style="color:rgba(255,255,255,0.5); font-size:0.8rem;">
+            <i class="bi bi-shield-lock me-1"></i>Políticas de Privacidad
+        </a>
+    </div>
+    </div>
+</footer>
+
+<a href="contacto.html" class="fixed-chat-btn">
+    <div class="btn-pulse"></div>
+    <i class="bi bi-chat-dots-fill"></i>
+    <span>Contáctanos</span>
+</a>
+
+<!-- modal politicas de privacidad -->
+<div class="modal fade" id="privacidadModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content border-0 shadow-lg" style="border-radius:20px; overflow:hidden;">
+            <div class="modal-header" style="background: linear-gradient(135deg, #006400, #004d00); border:none;">
+                <h5 class="modal-title text-white fw-bold">
+                    <i class="bi bi-shield-lock-fill me-2"></i>Políticas de Privacidad
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body p-4">
+                <p class="text-muted small">Última actualización: enero 2026</p>
+                <p>En la <strong>Universidad Nacional Pedro Henríquez Ureña (UNPHU)</strong> nos comprometemos a proteger la privacidad de nuestros usuarios. Esta política explica cómo recopilamos, usamos y protegemos tu información personal.</p>
+
+                <h6 class="fw-bold text-success mt-4"><i class="bi bi-1-circle-fill me-2"></i>Información que recopilamos</h6>
+                <ol>
+                    <li>Nombre completo y apellidos</li>
+                    <li>Correo electrónico y número de teléfono</li>
+                    <li>Información académica previa</li>
+                    <li>Datos de navegación en nuestro sitio web</li>
+                    <li>Información enviada a través de formularios de contacto</li>
+                </ol>
+
+                <h6 class="fw-bold text-success mt-4"><i class="bi bi-shield-check me-2"></i>Cómo usamos tu información</h6>
+                <ul>
+                    <li>Para procesar solicitudes de admisión</li>
+                    <li>Para enviarte información sobre carreras y eventos</li>
+                    <li>Para mejorar nuestros servicios universitarios</li>
+                    <li>Para contactarte en respuesta a tus consultas</li>
+                    <li>Para cumplir con requisitos legales y académicos</li>
+                </ul>
+
+                <h6 class="fw-bold text-success mt-4"><i class="bi bi-lock-fill me-2"></i>Protección de datos</h6>
+                <p>Tu información es almacenada de forma segura y no será compartida con terceros sin tu consentimiento, salvo que la ley lo requiera.</p>
+
+                <h6 class="fw-bold text-success mt-4"><i class="bi bi-envelope-fill me-2"></i>Contacto</h6>
+                <p class="mb-0">Si tienes preguntas puedes escribirnos a <a href="mailto:info@unphu.edu.do" class="text-success">info@unphu.edu.do</a> o llamarnos al (809) 562-6601.</p>
+            </div>
+            <div class="modal-footer border-0">
+                <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button class="btn btn-unphu" data-bs-dismiss="modal">
+                    <i class="bi bi-check-circle-fill me-2"></i>Entendido
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

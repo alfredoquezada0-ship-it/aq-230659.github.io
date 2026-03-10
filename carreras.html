@@ -2,199 +2,306 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Universidad Nacional Pedro Henríquez Ureña - Institución académica de excelencia en la República Dominicana.">
+    <meta name="keywords" content="UNPHU, universidad, educación superior, República Dominicana, carreras universitarias">
+    <meta name="author" content="UNPHU">
+    <meta name="robots" content="index, follow">
     <title>UNPHU - Carreras</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
 </head>
 <body>
-    <header>
-        <h1>Carreras en la UNPHU</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="historia.html">Historia</a></li>
-                <li><a href="carreras.html">Carreras</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Tabla original -->
-    <section>
-        <h2>Facultades y programas</h2>
-        <table border="1">
-            <tr>
-                <th>Facultad</th>
-                <th>Carreras</th>
-                <th>Duración</th>
-            </tr>
-            <tr>
-                <td>Ingeniería</td>
-                <td>Ingeniería Civil, Ingeniería Industrial, Sistemas</td>
-                <td>5 años</td>
-            </tr>
-            <tr>
-                <td>Salud</td>
-                <td>Medicina, Odontología, Farmacia</td>
-                <td>6 años</td>
-            </tr>
-            <tr>
-                <td>Humanidades</td>
-                <td>Educación, Psicología, Derecho</td>
-                <td>4 años</td>
-            </tr>
-            <tr>
-                <td>Arquitectura y Artes</td>
-                <td>Arquitectura, Diseño Gráfico</td>
-                <td>5 años</td>
-            </tr>
-            <tr>
-                <td>Ciencias Económicas</td>
-                <td>Administración de Empresas, Contabilidad, Marketing</td>
-                <td>4 años</td>
-            </tr>
-        </table>
-    </section>
-
-    <!-- Descripción de carreras -->
-    <section>
-        <h2>Descripción de carreras destacadas</h2>
-
-        <div class="padding-box" style="margin-bottom: 16px;">
-            <h3>🏗️ Ingeniería Civil</h3>
-            <p>Forma profesionales capaces de diseñar, construir y supervisar obras de infraestructura como puentes, carreteras, edificios y sistemas hidráulicos. El egresado puede trabajar en empresas constructoras, instituciones gubernamentales y consultoras.</p>
-        </div>
-
-        <div class="padding-box" style="margin-bottom: 16px;">
-            <h3>💻 Ingeniería en Sistemas</h3>
-            <p>Prepara especialistas en desarrollo de software, redes, bases de datos e inteligencia artificial. Es una de las carreras con mayor demanda laboral en la actualidad, tanto a nivel local como internacional.</p>
-        </div>
-
-        <div class="padding-box" style="margin-bottom: 16px;">
-            <h3>⚕️ Medicina</h3>
-            <p>Una de las carreras más completas y exigentes de la UNPHU. Forma médicos generales con sólida base científica y ética, capacitados para ejercer en hospitales, clínicas y centros de salud públicos y privados.</p>
-        </div>
-
-        <div class="padding-box" style="margin-bottom: 16px;">
-            <h3>⚖️ Derecho</h3>
-            <p>Capacita a los estudiantes en el análisis e interpretación de las leyes dominicanas e internacionales. Los egresados pueden ejercer como abogados, jueces, fiscales, asesores legales o diplomáticos.</p>
-        </div>
-
-        <div class="padding-box">
-            <h3>📊 Administración de Empresas</h3>
-            <p>Forma líderes empresariales con habilidades en gestión, finanzas, recursos humanos y estrategia. Una de las carreras más versátiles, con salidas en prácticamente todos los sectores de la economía.</p>
-        </div>
-    </section>
-
-    <!-- Duración y requisitos -->
-    <section>
-        <h2>Requisitos de admisión</h2>
-        <div class="margin-box">
-            <h3>Documentos requeridos para todas las carreras:</h3>
-            <ul>
-                <li>Acta de nacimiento original (menos de 1 año de expedición)</li>
-                <li>Certificado de bachillerato o constancia de 4to. año</li>
-                <li>2 fotos 2x2 recientes</li>
-                <li>Cédula de identidad o pasaporte vigente</li>
-                <li>Certificado médico</li>
-                <li>Pago de la cuota de inscripción</li>
+<nav class="navbar navbar-expand-lg navbar-unphu sticky-top">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+            <img src="img/logonav.png" alt="UNPHU" height="40" style="filter: brightness(0) invert(1);">
+            <span class="navbar-brand-text d-none d-md-block">UNPHU</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMain">
+            <ul class="navbar-nav ms-auto gap-1">
+                <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-fill me-1"></i>Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="historia.html"><i class="bi bi-book-fill me-1"></i>Historia</a></li>
+                <li class="nav-item"><a class="nav-link active" href="carreras.html"><i class="bi bi-mortarboard-fill me-1"></i>Carreras</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html"><i class="bi bi-envelope-fill me-1"></i>Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="noticias.html"><i class="bi bi-newspaper me-1"></i>Noticias</a></li>
+                <!-- boton modo oscuro -->
+                <li class="nav-item ms-2">
+                    <button id="darkModeToggle">
+                        <i class="bi bi-moon-stars-fill me-1"></i> Modo Oscuro
+                    </button>
+                </li>
             </ul>
         </div>
-        <div class="margin-box">
-            <h3>Requisitos adicionales por facultad:</h3>
-            <table>
-                <tr>
-                    <th>Facultad</th>
-                    <th>Requisito especial</th>
-                    <th>Duración de la carrera</th>
-                </tr>
-                <tr>
-                    <td>Salud (Medicina)</td>
-                    <td>Prueba de aptitud académica + entrevista</td>
-                    <td>6 años + residencia</td>
-                </tr>
-                <tr>
-                    <td>Ingeniería</td>
-                    <td>Prueba de matemáticas</td>
-                    <td>5 años</td>
-                </tr>
-                <tr>
-                    <td>Arquitectura</td>
-                    <td>Portafolio de dibujo o diseño</td>
-                    <td>5 años</td>
-                </tr>
-                <tr>
-                    <td>Humanidades y Ciencias Económicas</td>
-                    <td>Prueba de admisión general</td>
-                    <td>4 años</td>
-                </tr>
-            </table>
-        </div>
-    </section>
+    </div>
+</nav>
 
-    <!-- Campo laboral -->
-    <section>
-        <h2>Campo laboral y salidas profesionales</h2>
-        <div class="text-align-box" style="margin-bottom: 16px;">
-            <p class="font-size-text">Nuestros egresados trabajan en los mejores lugares</p>
-            <p class="color-text">El 85% de los graduados de la UNPHU se incorpora al mercado laboral dentro de los primeros 6 meses después de graduarse.</p>
-        </div>
+<!-- hero de la pagina -->
+<div style="background: linear-gradient(135deg, #006400, #004d00); color:white; padding: 60px 0;">
+    <div class="container text-center">
+        <h1 style="font-family:'Playfair Display',serif; font-size:3rem; font-weight:900;">Carreras en la UNPHU</h1>
+        <p class="lead mt-2" style="color:rgba(255,255,255,0.8);">+30 programas académicos para construir tu futuro profesional</p>
+    </div>
+</div>
 
-        <table>
-            <tr>
-                <th>Carrera</th>
-                <th>Dónde trabajan nuestros egresados</th>
-                <th>Salario promedio inicial (RD$)</th>
-            </tr>
-            <tr>
-                <td>Ingeniería en Sistemas</td>
-                <td>Empresas tecnológicas, bancos, startups, trabajo remoto</td>
-                <td>RD$ 45,000 – 70,000</td>
-            </tr>
-            <tr>
-                <td>Medicina</td>
-                <td>Hospitales, clínicas privadas, centros de salud pública</td>
-                <td>RD$ 60,000 – 90,000</td>
-            </tr>
-            <tr>
-                <td>Derecho</td>
-                <td>Bufetes, instituciones del Estado, empresas privadas</td>
-                <td>RD$ 35,000 – 60,000</td>
-            </tr>
-            <tr>
-                <td>Administración de Empresas</td>
-                <td>Empresas nacionales e internacionales, emprendimiento</td>
-                <td>RD$ 35,000 – 55,000</td>
-            </tr>
-            <tr>
-                <td>Arquitectura</td>
-                <td>Constructoras, diseño de interiores, urbanismo</td>
-                <td>RD$ 40,000 – 65,000</td>
-            </tr>
+<!-- contenido principal -->
+<div class="container py-5 seccion-carreras">
+
+    <!-- tabla de facultades -->
+    <h2 class="section-title">Facultades y Programas</h2>
+    <div class="table-responsive mb-5">
+        <table class="table table-unphu table-hover rounded-3 overflow-hidden shadow-sm">
+            <thead>
+                <tr>
+                    <th><i class="bi bi-building me-1"></i>Facultad</th>
+                    <th><i class="bi bi-book me-1"></i>Carreras</th>
+                    <th><i class="bi bi-clock me-1"></i>Duración</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Ingeniería</td><td>Ingeniería Civil, Ingeniería Industrial, Sistemas</td><td><span class="badge bg-success">5 años</span></td></tr>
+                <tr><td>Salud</td><td>Medicina, Odontología, Farmacia</td><td><span class="badge bg-danger">6 años</span></td></tr>
+                <tr><td>Humanidades</td><td>Educación, Psicología, Derecho</td><td><span class="badge bg-primary">4 años</span></td></tr>
+                <tr><td>Arquitectura y Artes</td><td>Arquitectura, Diseño Gráfico</td><td><span class="badge bg-success">5 años</span></td></tr>
+                <tr><td>Ciencias Económicas</td><td>Administración de Empresas, Contabilidad, Marketing</td><td><span class="badge bg-primary">4 años</span></td></tr>
+            </tbody>
         </table>
-    </section>
+    </div>
 
-    <!-- Testimonios -->
-    <section>
-        <h2>Testimonios de estudiantes</h2>
-
-        <div class="bg-text" style="margin-bottom: 14px;">
-            <strong>María González — Ingeniería en Sistemas, 4to. año</strong><br>
-            "La UNPHU me ha dado las herramientas para desarrollarme como programadora. Los laboratorios están muy bien equipados y los profesores tienen experiencia real en la industria. Ya tengo una pasantía en una empresa tecnológica gracias a la bolsa de trabajo de la universidad."
+    <!-- cards de carreras destacadas -->
+    <h2 class="section-title">Carreras Destacadas</h2>
+    <div class="row g-4 mb-5">
+        <div class="col-md-6 col-lg-4">
+            <div class="card carrera-card h-100">
+                <div class="card-header"><i class="bi bi-cpu-fill me-2"></i>Ingeniería en Sistemas</div>
+                <div class="card-body">
+                    <p class="card-text">Prepara especialistas en desarrollo de software, redes, bases de datos e inteligencia artificial. Es una de las carreras con mayor demanda laboral.</p>
+                    <button class="btn btn-sm btn-outline-success" data-bs-toggle="collapse" data-bs-target="#det1">Ver requisitos</button>
+                    <!-- quite el style inline y use una clase -->
+                    <div class="collapse mt-2 requisitos-box" id="det1">
+                        <small><strong>Requisito especial:</strong> Prueba de matemáticas<br><strong>Duración:</strong> 5 años<br><strong>Salario promedio:</strong> RD$45,000–70,000</small>
+                    </div>
+                </div>
+                <div class="card-footer bg-white border-0">
+                    <button class="btn btn-unphu btn-sm w-100" data-bs-toggle="modal" data-bs-target="#carreraModal" onclick="setCarrera('💻 Ingeniería en Sistemas','5 años','RD$45,000–70,000','Prueba de matemáticas')">Solicitar info</button>
+                </div>
+            </div>
         </div>
-
-        <div class="bg-text" style="margin-bottom: 14px;">
-            <strong>Carlos Pérez — Medicina, 3er. año</strong><br>
-            "Estudiar medicina en la UNPHU es exigente pero muy gratificante. Las prácticas clínicas comienzan desde temprano y eso nos prepara muy bien para la realidad del hospital. El ambiente entre los compañeros es muy colaborativo."
+        <div class="col-md-6 col-lg-4">
+            <div class="card carrera-card h-100">
+                <div class="card-header"><i class="bi bi-heart-pulse-fill me-2"></i>Medicina</div>
+                <div class="card-body">
+                    <p class="card-text">Una de las carreras más completas y exigentes de la UNPHU. Forma médicos generales con sólida base científica y ética.</p>
+                    <button class="btn btn-sm btn-outline-success" data-bs-toggle="collapse" data-bs-target="#det2">Ver requisitos</button>
+                    <div class="collapse mt-2 requisitos-box" id="det2">
+                        <small><strong>Requisito especial:</strong> Prueba de aptitud + entrevista<br><strong>Duración:</strong> 6 años + residencia<br><strong>Salario promedio:</strong> RD$60,000–90,000</small>
+                    </div>
+                </div>
+                <div class="card-footer bg-white border-0">
+                    <button class="btn btn-unphu btn-sm w-100" data-bs-toggle="modal" data-bs-target="#carreraModal" onclick="setCarrera('⚕️ Medicina','6 años + residencia','RD$60,000–90,000','Prueba de aptitud + entrevista')">Solicitar info</button>
+                </div>
+            </div>
         </div>
-
-        <div class="bg-text">
-            <strong>Valeria Rodríguez — Derecho, recién graduada</strong><br>
-            "Me gradué hace 3 meses y ya estoy trabajando en un bufete en Santo Domingo. La formación que recibí en la UNPHU fue muy sólida, especialmente en derecho comercial y constitucional. Recomiendo la carrera 100%."
+        <div class="col-md-6 col-lg-4">
+            <div class="card carrera-card h-100">
+                <div class="card-header"><i class="bi bi-scales me-2"></i>Derecho</div>
+                <div class="card-body">
+                    <p class="card-text">Capacita a los estudiantes en el análisis e interpretación de las leyes dominicanas e internacionales. Egresados trabajan como abogados, jueces y diplomáticos.</p>
+                    <button class="btn btn-sm btn-outline-success" data-bs-toggle="collapse" data-bs-target="#det3">Ver requisitos</button>
+                    <div class="collapse mt-2 requisitos-box" id="det3">
+                        <small><strong>Requisito especial:</strong> Prueba de admisión general<br><strong>Duración:</strong> 4 años<br><strong>Salario promedio:</strong> RD$35,000–60,000</small>
+                    </div>
+                </div>
+                <div class="card-footer bg-white border-0">
+                    <button class="btn btn-unphu btn-sm w-100" data-bs-toggle="modal" data-bs-target="#carreraModal" onclick="setCarrera('⚖️ Derecho','4 años','RD$35,000–60,000','Prueba de admisión general')">Solicitar info</button>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
 
-    <footer>
-        <p>&copy; 2026 UNPHU</p>
-    </footer>
+    <!-- campo laboral -->
+    <h2 class="section-title">Campo Laboral</h2>
+    <!-- quite el style inline y use la clase alerta-laboral -->
+    <div class="alert alerta-laboral" role="alert">
+        <i class="bi bi-graph-up-arrow me-2"></i>
+        <strong>El 85%</strong> de los graduados de la UNPHU se incorpora al mercado laboral dentro de los primeros 6 meses.
+    </div>
+    <div class="table-responsive mb-5">
+        <table class="table table-unphu table-hover shadow-sm rounded-3 overflow-hidden">
+            <thead>
+                <tr>
+                    <th>Carrera</th>
+                    <th>Dónde trabajan</th>
+                    <th>Salario inicial (RD$)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Ingeniería en Sistemas</td><td>Empresas tecnológicas, bancos, startups, trabajo remoto</td><td><strong>45,000 – 70,000</strong></td></tr>
+                <tr><td>Medicina</td><td>Hospitales, clínicas privadas, centros de salud pública</td><td><strong>60,000 – 90,000</strong></td></tr>
+                <tr><td>Derecho</td><td>Bufetes, instituciones del Estado, empresas privadas</td><td><strong>35,000 – 60,000</strong></td></tr>
+                <tr><td>Administración de Empresas</td><td>Empresas nacionales e internacionales, emprendimiento</td><td><strong>35,000 – 55,000</strong></td></tr>
+                <tr><td>Arquitectura</td><td>Constructoras, diseño de interiores, urbanismo</td><td><strong>40,000 – 65,000</strong></td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- testimonios -->
+    <h2 class="section-title">Testimonios de Estudiantes</h2>
+    <div class="testimonio">
+        <strong>María González — Ingeniería en Sistemas, 4to. año</strong>
+        <p class="mb-0 mt-2">"La UNPHU me ha dado las herramientas para desarrollarme como programadora. Los laboratorios están muy bien equipados y los profesores tienen experiencia real en la industria."</p>
+    </div>
+    <div class="testimonio">
+        <strong>Carlos Pérez — Medicina, 3er. año</strong>
+        <p class="mb-0 mt-2">"Estudiar medicina en la UNPHU es exigente pero muy gratificante. Las prácticas clínicas comienzan desde temprano y eso nos prepara muy bien para la realidad del hospital."</p>
+    </div>
+    <div class="testimonio">
+        <strong>Valeria Rodríguez — Derecho, recién graduada</strong>
+        <p class="mb-0 mt-2">"Me gradué hace 3 meses y ya estoy trabajando en un bufete en Santo Domingo. La formación que recibí en la UNPHU fue muy sólida. Recomiendo la carrera 100%."</p>
+    </div>
+</div>
+
+<!-- modal de carrera -->
+<div class="modal fade" id="carreraModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow-lg" style="border-radius:20px; overflow:hidden;">
+            <div class="modal-header" style="background: linear-gradient(135deg, #006400, #004d00); border:none;">
+                <h5 class="modal-title text-white fw-bold" id="carreraModalTitle">Información de Carrera</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body p-4">
+                <!-- quite el style inline aqui tambien -->
+                <div id="carreraInfo" class="mb-3 p-3 rounded-3 requisitos-box"></div>
+                <label class="form-label fw-semibold">Tu nombre</label>
+                <input type="text" class="form-control mb-3" placeholder="Nombre completo">
+                <label class="form-label fw-semibold">Tu correo</label>
+                <input type="email" class="form-control mb-3" placeholder="correo@ejemplo.com">
+            </div>
+            <div class="modal-footer border-0">
+                <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button class="btn btn-unphu"><i class="bi bi-send-fill me-2"></i>Solicitar Info</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4">
+    <h5><i class="bi bi-mortarboard-fill me-2"></i>UNPHU</h5>
+    <p class="small mt-2" style="color: rgba(255,255,255,0.6);">Universidad Nacional Pedro Henríquez Ureña. Formando líderes desde 1966 para transformar la República Dominicana.</p>
+    <!-- redes sociales -->
+    <div class="d-flex gap-3 mt-3">
+        <a href="https://www.facebook.com/unphu" target="_blank" title="Facebook">
+            <i class="bi bi-facebook" style="font-size:1.5rem; color:rgba(255,255,255,0.7);"></i>
+        </a>
+        <a href="https://www.instagram.com/unphu" target="_blank" title="Instagram">
+            <i class="bi bi-instagram" style="font-size:1.5rem; color:rgba(255,255,255,0.7);"></i>
+        </a>
+        <a href="https://www.twitter.com/unphu" target="_blank" title="Twitter/X">
+            <i class="bi bi-twitter-x" style="font-size:1.5rem; color:rgba(255,255,255,0.7);"></i>
+        </a>
+        <a href="https://www.youtube.com/@unphu" target="_blank" title="YouTube">
+            <i class="bi bi-youtube" style="font-size:1.5rem; color:rgba(255,255,255,0.7);"></i>
+        </a>
+    </div>
+</div>
+            <div class="col-md-4">
+                <h5>Navegación</h5>
+                <ul class="list-unstyled mt-2" style="color: rgba(255,255,255,0.7);">
+                    <li><a href="index.html"><i class="bi bi-chevron-right me-1"></i>Inicio</a></li>
+                    <li><a href="historia.html"><i class="bi bi-chevron-right me-1"></i>Historia</a></li>
+                    <li><a href="carreras.html"><i class="bi bi-chevron-right me-1"></i>Carreras</a></li>
+                    <li><a href="contacto.html"><i class="bi bi-chevron-right me-1"></i>Contacto</a></li>
+                    <li><a href="noticias.html"><i class="bi bi-chevron-right me-1"></i>Noticias</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Contacto</h5>
+                <ul class="list-unstyled mt-2" style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">
+                    <li><i class="bi bi-geo-alt-fill me-2" style="color: var(--unphu-gold);"></i>Av. John F. Kennedy, Santo Domingo</li>
+                    <li><i class="bi bi-telephone-fill me-2" style="color: var(--unphu-gold);"></i>(809) 562-6601</li>
+                    <li><i class="bi bi-envelope-fill me-2" style="color: var(--unphu-gold);"></i>info@unphu.edu.do</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container text-center">
+        <p style="color:rgba(255,255,255,0.4); font-size:0.85rem;">
+            &copy; 2026 UNPHU — Universidad Nacional Pedro Henríquez Ureña
+        </p>
+        <!-- enlace que abre el modal -->
+        <a href="#" data-bs-toggle="modal" data-bs-target="#privacidadModal" 
+           style="color:rgba(255,255,255,0.5); font-size:0.8rem;">
+            <i class="bi bi-shield-lock me-1"></i>Políticas de Privacidad
+        </a>
+    </div>
+    </div>
+</footer>
+
+<a href="contacto.html" class="fixed-chat-btn">
+    <div class="btn-pulse"></div>
+    <i class="bi bi-chat-dots-fill"></i>
+    <span>Contáctanos</span>
+</a>
+
+<!-- modal politicas de privacidad -->
+<div class="modal fade" id="privacidadModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content border-0 shadow-lg" style="border-radius:20px; overflow:hidden;">
+            <div class="modal-header" style="background: linear-gradient(135deg, #006400, #004d00); border:none;">
+                <h5 class="modal-title text-white fw-bold">
+                    <i class="bi bi-shield-lock-fill me-2"></i>Políticas de Privacidad
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body p-4">
+                <p class="text-muted small">Última actualización: enero 2026</p>
+                <p>En la <strong>Universidad Nacional Pedro Henríquez Ureña (UNPHU)</strong> nos comprometemos a proteger la privacidad de nuestros usuarios. Esta política explica cómo recopilamos, usamos y protegemos tu información personal.</p>
+
+                <h6 class="fw-bold text-success mt-4"><i class="bi bi-1-circle-fill me-2"></i>Información que recopilamos</h6>
+                <ol>
+                    <li>Nombre completo y apellidos</li>
+                    <li>Correo electrónico y número de teléfono</li>
+                    <li>Información académica previa</li>
+                    <li>Datos de navegación en nuestro sitio web</li>
+                    <li>Información enviada a través de formularios de contacto</li>
+                </ol>
+
+                <h6 class="fw-bold text-success mt-4"><i class="bi bi-shield-check me-2"></i>Cómo usamos tu información</h6>
+                <ul>
+                    <li>Para procesar solicitudes de admisión</li>
+                    <li>Para enviarte información sobre carreras y eventos</li>
+                    <li>Para mejorar nuestros servicios universitarios</li>
+                    <li>Para contactarte en respuesta a tus consultas</li>
+                    <li>Para cumplir con requisitos legales y académicos</li>
+                </ul>
+
+                <h6 class="fw-bold text-success mt-4"><i class="bi bi-lock-fill me-2"></i>Protección de datos</h6>
+                <p>Tu información es almacenada de forma segura y no será compartida con terceros sin tu consentimiento, salvo que la ley lo requiera.</p>
+
+                <h6 class="fw-bold text-success mt-4"><i class="bi bi-envelope-fill me-2"></i>Contacto</h6>
+                <p class="mb-0">Si tienes preguntas puedes escribirnos a <a href="mailto:info@unphu.edu.do" class="text-success">info@unphu.edu.do</a> o llamarnos al (809) 562-6601.</p>
+            </div>
+            <div class="modal-footer border-0">
+                <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button class="btn btn-unphu" data-bs-dismiss="modal">
+                    <i class="bi bi-check-circle-fill me-2"></i>Entendido
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
